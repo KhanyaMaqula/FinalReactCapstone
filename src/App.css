@@ -1,0 +1,53 @@
+/* Custom CSS for Spotify-like style */
+body {
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #1db954;
+  }
+  
+  .card {
+    background-color: #181818;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #181818;
+  }
+  
+  .card:hover::after {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-img-top {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+  }
+  
+  /* Spotify green button */
+  .btn-spotify {
+    background-color: #1db954;
+    border-color: #1db954;
+    color: #fff;
+  }
+  
+  .btn-spotify:hover {
+    background-color: #1ed760;
+    border-color: #1ed760;
+    color: #fff;
+  }
+  

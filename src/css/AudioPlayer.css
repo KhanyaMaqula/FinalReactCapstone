@@ -1,0 +1,96 @@
+/* AudioPlayer.css */
+
+.audio-player-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #282828;
+    color: #ffffff;
+  }
+  
+  .audio-controls {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .play-pause-button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #1db954;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .play-pause-button img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .play-pause-button:hover {
+    background-color: #1ed760;
+  }
+  
+  .audio-info {
+    flex: 1;
+  }
+  
+  .current-episode-info {
+    margin-bottom: 5px;
+  }
+  
+  .episode-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .episode-description {
+    font-size: 12px;
+  }
+  
+  /* Custom styles for the audio player controls */
+  audio {
+    width: 100%;
+    background-color: #282828;
+  }
+  
+  audio::-webkit-media-controls-panel {
+    background-color: #282828;
+    color: #ffffff;
+  }
+  
+  audio::-webkit-media-controls-play-button {
+    background-color: #1db954;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  audio::-webkit-media-controls-play-button:before {
+    content: '\u25B6';
+    font-size: 14px;
+  }
+  
+  audio::-webkit-media-controls-timeline {
+    background-color: #1db954;
+  }
+  
+  audio::-webkit-media-controls-timeline-elapsed {
+    background-color: #ffffff;
+  }
+  
+  audio::-webkit-media-controls-volume-slider-container {
+    display: none;
+  }
+  
+  audio::-webkit-media-controls-volume-slider {
+    display: none;
+  }
+  
+  
