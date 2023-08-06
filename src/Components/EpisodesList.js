@@ -3,12 +3,11 @@ import { useLocation } from 'react-router';
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import playIcon from '../Images/media-player-icon-4.jpg'
 import AudioPlayer from './audio_controls';
-import { useAudioPlayer } from './contexts/AudioContext';
 
 const EpisodesList = () => {
     const { state } = useLocation();
     const [episodes, setEpisodes] = useState([]);
-    const { play, setPlay } = useAudioPlayer();
+    const [play, setPlay ] = useState(true)
     //const [currentEpisode, setCurrentEpisode] = useState(null);
 
     useEffect(() => {
