@@ -1,0 +1,15 @@
+.header-sect {
+    display: "flex";
+    justify-content:"space-between";
+    border: '1px solid #fff';
+    width: '50%';
+    align-items: "center";
+    margin: auto; 
+}
+
+@media (max-width:768px){
+    .header-sect{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -14,5 +14,6 @@ export const Genre = ()=>{
         <li>Fiction</li>
         <li>News</li>
         <li>Kids and Family</li>
+        <li>My Favorites</li>
     </ul>)
 }

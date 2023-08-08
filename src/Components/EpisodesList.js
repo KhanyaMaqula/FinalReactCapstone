@@ -8,7 +8,6 @@ const EpisodesList = () => {
     const { state } = useLocation();
     const [episodes, setEpisodes] = useState([]);
     const [play, setPlay ] = useState(true)
-    //const [currentEpisode, setCurrentEpisode] = useState(null);
 
     useEffect(() => {
         if (state && state.seasonEpisodes) {

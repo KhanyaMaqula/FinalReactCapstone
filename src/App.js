@@ -8,7 +8,7 @@ import Login from './Components/authPages/Login';
 import SignUp from './Components/authPages/SignUp';
 import { supabase } from './supabase/supbaseClient';
 import { useEffect, useState } from 'react'
-
+import Header from './Components/Header';
 function App() {
     const navigate = useNavigate()
     const [userEmail,setUserEmail]=useState('')
@@ -27,10 +27,7 @@ function App() {
     checkSession()
     },[])
   return ( <>
-   <div style={{ position: 'absolute', top: '10px', right: '10px', border: '1px solid #fff', borderRadius: '4px' }}>
-     <button>Sign Out</button>
-     <p style={{fontWeight:"500 "}}>{userEmail}</p>
-    </div>
+   <Header email={userEmail}/>
   <Routes>
     <Route path='/' element={<HomePage/>}/>
     <Route path='/Show' element={<Seasons/>}/>
